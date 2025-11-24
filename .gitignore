@@ -34,3 +34,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Node.js binary (should not be committed)
+.nodejs/
+
