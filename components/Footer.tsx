@@ -14,7 +14,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="#platform" className="hover:text-white transition-colors">Platform</a></li>
               <li><a href="#integrations" className="hover:text-white transition-colors">Integrations</a></li>
-              <li><a href="#pricing" className="hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="/pricing" className="hover:text-white transition-colors">Pricing</a></li>
             </ul>
           </div>
           <div>
