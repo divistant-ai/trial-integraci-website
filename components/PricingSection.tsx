@@ -70,40 +70,40 @@ export default function PricingSection() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative rounded-lg border-2 p-8 ${
+              className={`relative rounded-lg border-2 p-6 sm:p-8 ${
                 plan.popular
-                  ? 'border-primary-600 dark:border-primary-400 bg-primary-50 dark:bg-primary-900/20 scale-105'
+                  ? 'border-primary-600 dark:border-primary-400 bg-primary-50 dark:bg-primary-900/20 md:scale-105 md:-mt-4 md:mb-4'
                   : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800'
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <span className="bg-primary-600 text-white px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap">
                     Most Popular
                   </span>
                 </div>
               )}
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+              <div className="text-center mb-6 sm:mb-8 pt-2 sm:pt-0">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2">
                   {plan.name}
                 </h3>
-                <div className="mb-4">
-                  <span className="text-4xl font-bold text-gray-900 dark:text-white">
+                <div className="mb-3 sm:mb-4">
+                  <span className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
                     {plan.price}
                   </span>
                   {plan.price !== 'Free' && (
-                    <span className="text-gray-600 dark:text-gray-400 ml-2">/month</span>
+                    <span className="text-gray-600 dark:text-gray-400 ml-2 text-sm sm:text-base">/month</span>
                   )}
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
                   {plan.description}
                 </p>
               </div>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
                     <svg
@@ -123,7 +123,7 @@ export default function PricingSection() {
               </ul>
               <a
                 href={plan.ctaLink}
-                className={`block w-full text-center py-3 px-6 rounded-lg font-semibold transition-colors ${
+                className={`block w-full text-center py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold transition-colors text-sm sm:text-base ${
                   plan.popular
                     ? 'bg-primary-600 hover:bg-primary-700 text-white'
                     : 'bg-gray-900 dark:bg-gray-700 hover:bg-gray-800 dark:hover:bg-gray-600 text-white'

@@ -24,18 +24,18 @@ export default function IntegrationSection() {
               IntegraCI
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4 md:gap-6">
             {integrations.map((integration, index) => (
               <div
                 key={index}
-                className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow text-center"
+                className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3 sm:p-4 md:p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow text-center"
               >
-                <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                  <span className="text-primary-600 dark:text-primary-400 font-semibold text-sm">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg mx-auto mb-2 sm:mb-3 flex items-center justify-center">
+                  <span className="text-primary-600 dark:text-primary-400 font-semibold text-xs sm:text-sm">
                     {integration.charAt(0)}
                   </span>
                 </div>
-                <p className="text-sm font-medium text-gray-900 dark:text-white">
+                <p className="text-xs sm:text-sm font-medium text-gray-900 dark:text-white break-words">
                   {integration}
                 </p>
               </div>

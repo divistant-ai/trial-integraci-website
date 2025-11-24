@@ -40,32 +40,32 @@ export default function SolutionSection() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-12">
           Everything Your Developers Need, Under One Roof.
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-start">
+          <div className="space-y-3 sm:space-y-4">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`w-full text-left p-6 rounded-lg border-2 transition-all ${
+                className={`w-full text-left p-4 sm:p-6 rounded-lg border-2 transition-all ${
                   activeTab === tab.id
                     ? 'border-primary-600 dark:border-primary-400 bg-primary-50 dark:bg-primary-900/20'
                     : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 hover:border-gray-300 dark:hover:border-gray-600'
                 }`}
               >
-                <h3 className={`text-xl font-semibold mb-2 ${
+                <h3 className={`text-lg sm:text-xl font-semibold mb-2 ${
                   activeTab === tab.id
                     ? 'text-primary-600 dark:text-primary-400'
                     : 'text-gray-900 dark:text-white'
                 }`}>
                   {tab.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                   {tab.description}
                 </p>
               </button>
             ))}
           </div>
-          <div className="bg-white dark:bg-gray-900 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
+          <div className="bg-white dark:bg-gray-900 rounded-lg shadow-xl p-4 sm:p-6 lg:p-8 border border-gray-200 dark:border-gray-700 mt-6 lg:mt-0">
             <div className="aspect-video bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900/30 dark:to-primary-800/30 rounded-lg flex items-center justify-center">
               <div className="text-center">
                 <svg className="w-16 h-16 mx-auto text-primary-600 dark:text-primary-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

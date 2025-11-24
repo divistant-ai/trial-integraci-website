@@ -49,14 +49,14 @@ export default function FooterCTA() {
           Join high-performing teams shipping faster with IntegraCI.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
+          <form onSubmit={handleSubmit} className="w-full max-w-md space-y-3 sm:space-y-4">
             <input
               type="text"
               placeholder="Your Name"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               required
-              className="w-full px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full px-4 py-2.5 sm:py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white text-sm sm:text-base"
             />
             <input
               type="email"
@@ -64,18 +64,18 @@ export default function FooterCTA() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
-              className="w-full px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full px-4 py-2.5 sm:py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white text-sm sm:text-base"
             />
             <input
               type="text"
               placeholder="Company Name"
               value={formData.company}
               onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-              className="w-full px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full px-4 py-2.5 sm:py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white text-sm sm:text-base"
             />
             <button
               type="submit"
-              className="w-full bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+              className="w-full bg-white text-primary-600 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors"
             >
               Start Your Free Trial
             </button>

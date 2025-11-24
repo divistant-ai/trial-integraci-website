@@ -35,19 +35,19 @@ export default function ProblemSection() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-12">
           Is <span className="text-primary-600 dark:text-primary-400">&quot;Spaghetti DevOps&quot;</span> Slowing You Down?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="p-8 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow"
+              className="p-6 sm:p-8 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow"
             >
-              <div className="text-primary-600 dark:text-primary-400 mb-4">
+              <div className="text-primary-600 dark:text-primary-400 mb-3 sm:mb-4">
                 {problem.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2 sm:mb-3">
                 {problem.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
                 {problem.description}
               </p>
             </div>

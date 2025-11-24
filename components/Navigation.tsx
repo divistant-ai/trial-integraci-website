@@ -42,7 +42,7 @@ export default function Navigation() {
             </a>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             {mounted && (
             <button
               onClick={toggleDarkMode}
@@ -62,13 +62,13 @@ export default function Navigation() {
             )}
             <a
               href="#login"
-              className="hidden md:block text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              className="hidden lg:block text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors text-sm sm:text-base"
             >
               Login
             </a>
             <a
               href="#demo"
-              className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              className="bg-primary-600 hover:bg-primary-700 text-white px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors text-sm sm:text-base whitespace-nowrap"
             >
               Book a Demo
             </a>
